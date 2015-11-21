@@ -13,7 +13,7 @@ module Ruboty
       def echo_to(message)
         class << message
           def to
-            match_data[1] + @original[:to].split('@')[1]
+            [match_data[1], @original[:to].split('@')[1]].join('@')
           end
         end
         message.reply(message.match_data[2])
