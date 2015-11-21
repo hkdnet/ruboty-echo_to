@@ -1,9 +1,9 @@
 require 'ruboty'
-require 'ruboty/echo_channel/version'
+require 'ruboty/echo_to/version'
 
 module Ruboty
   module Handlers
-    class EchoChannel < Base
+    class EchoTo < Base
       on(
         /echo_to\s+#(.+?)\s+(.*)/m,
         name: 'echo_to',
