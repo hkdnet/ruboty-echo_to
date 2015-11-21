@@ -1,6 +1,6 @@
 # Ruboty::EchoChannel
 
-A plugin for Ruboty which allows your bot to echo to the other channel.
+A plugin for Ruboty which allows your bot to echo to another channel.
 
 ## Installation
 
@@ -20,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+@ruboty echo_to #channel message
+```
+
+@ruboty will send message to the specified channel.
 
 ## Contributing
 
