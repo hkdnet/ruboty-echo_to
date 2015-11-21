@@ -7,12 +7,7 @@ module Ruboty
       on(
         /echo_to\s+#(.+?)\s+(.*)/m,
         name: 'echo_to',
-        description: 'repeat your message to another channel'
-      )
-      on(
-        /et_debug/,
-        name: 'et_debug',
-        description: 'for debug'
+        description: 'send your message to another channel'
       )
 
       def echo_to(message)
@@ -31,6 +26,7 @@ module Ruboty
                           message.match_data[2])
       end
 
+      # for debug
       def et_debug(message)
         class << message
           def debug
