@@ -9,6 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['hkdnet']
   spec.email         = ['hkdnet@users.noreply.github.com']
 
+  spec.files         = `git ls-files -z`.split("\x0")
   spec.summary       = 'echo given message to another channel.'
   spec.homepage      = 'https://github.com/hkdnet/ruboty-echo_to'
   spec.license       = 'MIT'
