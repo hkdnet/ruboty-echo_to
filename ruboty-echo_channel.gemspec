@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['hkdnet']
   spec.email         = ['hkdnet@users.noreply.github.com']
 
-  spec.summary       = 'echo given message to the other channel.'
-  spec.homepage      = 'https://github.com/hkdnet/ruboty-echo_channel'
+  spec.summary       = 'echo given message to another channel.'
+  spec.homepage      = 'https://github.com/hkdnet/ruboty-echo_channelg'
   spec.license       = 'MIT'
 
   spec.require_paths = ['lib']
