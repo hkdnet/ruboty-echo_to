@@ -9,6 +9,11 @@ module Ruboty
         name: 'echo_to',
         description: 'repeat your message to another channel'
       )
+      on(
+        /et_debug/,
+        name: 'et_debug',
+        description: 'for debug'
+      )
 
       def echo_to(message)
         class << message
@@ -23,6 +28,15 @@ module Ruboty
         end
         message.reply_to!(message.match_data[1],
                           message.match_data[2])
+      end
+      def et_debug(message)
+        class << message
+          def debug
+            "from: #{@original[:from]}\n" \
+            "to: #{@original[:to]}\n"
+          end
+        end
+        message.reply(message.debug)
       end
     end
   end
