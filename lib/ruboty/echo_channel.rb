@@ -1,5 +1,5 @@
 require 'ruboty'
-require "ruboty/echo_channel/version"
+require 'ruboty/echo_channel/version'
 
 module Ruboty
   module Handlers
@@ -12,14 +12,16 @@ module Ruboty
 
       def echo_to(message)
         class << message
-          def to
+          def modify_to!
+            @original[:to] = new_to
+          end
+
+          def new_to
             [match_data[1], @original[:to].split('@')[1]].join('@')
           end
         end
+        message.modify_to!
         message.reply(message.match_data[2])
-        message.reply("to\t#{message.to}")
-        message.reply("match_data[1]\t#{match_data[1]}")
-        message.reply("match_data[2]\t#{match_data[2]}")
       end
     end
   end
