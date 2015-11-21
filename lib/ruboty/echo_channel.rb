@@ -19,6 +19,7 @@ module Ruboty
         class << message
           def reply_to!(channel, text)
             @original[:from] = new_to(channel)
+            @original[:type] = 'groupchat'
             reply(text)
           end
 
@@ -36,6 +37,7 @@ module Ruboty
             text = "original------\n" \
             "from: #{@original[:from]}\n" \
             "to: #{@original[:to]}\n" \
+            "type: #{@original[:type]}\n" \
             "#{new_to('channel')}"
             reply(text)
           end
