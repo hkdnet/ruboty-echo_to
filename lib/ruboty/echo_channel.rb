@@ -23,7 +23,7 @@ module Ruboty
           end
 
           def new_to(channel)
-            [channel, @original[:from].split('@')[1]].join('@')
+            "#{channel}@conference.#{ENV['SLACK_TEAM']}.xmpp.slack.com/#{ENV['SLACK_USERNAME']}"
           end
         end
         message.reply_to!(message.match_data[1],
