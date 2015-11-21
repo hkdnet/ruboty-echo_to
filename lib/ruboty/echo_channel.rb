@@ -29,14 +29,23 @@ module Ruboty
         message.reply_to!(message.match_data[1],
                           message.match_data[2])
       end
+
       def et_debug(message)
         class << message
           def debug
+            @original[:from] = new_to(channel)
+            text = "original------\n" \
             "from: #{@original[:from]}\n" \
-            "to: #{@original[:to]}\n"
+            "to: #{@original[:to]}\n" \
+            "#{new_to(channel)}"
+            reply(text)
+          end
+
+          def new_to(channel)
+            "#{channel}@conference.#{ENV['SLACK_TEAM']}.xmpp.slack.com/#{ENV['SLACK_USERNAME']}"
           end
         end
-        message.reply(message.debug)
+        message.debug
       end
     end
   end
