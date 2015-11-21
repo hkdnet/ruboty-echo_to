@@ -1,4 +1,4 @@
-# Ruboty::EchoChannel
+# Ruboty::EchoTo
 
 A plugin for Ruboty which allows your bot to echo to another channel.
 
@@ -7,7 +7,7 @@ A plugin for Ruboty which allows your bot to echo to another channel.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ruboty-echo_channel'
+gem 'ruboty-echo_to'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install ruboty-echo_channel
+    $ gem install ruboty-echo_to
 
 ## Usage
 
@@ -28,7 +28,7 @@ Or install it yourself as:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/hkdnet/ruboty-echo_channel. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/hkdnet/ruboty-echo_to. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
