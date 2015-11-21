@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['hkdnet@users.noreply.github.com']
 
   spec.summary       = 'echo given message to the other channel.'
-  spec.homepage      = %q(TODO: Put your gem's website or public repo URL here.)
+  spec.homepage      = 'https://github.com/hkdnet/ruboty-echo_channel'
   spec.license       = 'MIT'
 
   spec.require_paths = ['lib']
