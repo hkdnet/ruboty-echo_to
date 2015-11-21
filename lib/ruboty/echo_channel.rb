@@ -33,11 +33,11 @@ module Ruboty
       def et_debug(message)
         class << message
           def debug
-            @original[:from] = new_to(channel)
+            new_to(channel)
             text = "original------\n" \
             "from: #{@original[:from]}\n" \
             "to: #{@original[:to]}\n" \
-            "#{new_to(channel)}"
+            "#{new_to('channel')}"
             reply(text)
           end
 
