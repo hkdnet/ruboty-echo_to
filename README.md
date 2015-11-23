@@ -1,6 +1,6 @@
 # Ruboty::EchoTo
 
-A plugin for Ruboty which allows your bot to echo to another channel.
+A plugin for Ruboty + Slack which allows your bot to echo to another channel.
 
 ## Installation
 
